@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const input = document.getElementById('cardInput');
   
   button.addEventListener('click', function() {
+    button.style.backgroundColor = '#4287f5';
     const value = input.value.trim();
     if (value) {
       createCard(value);
       input.value = ''; // 入力フィールドをクリア
     }
+    button.style.backgroundColor = '#6c5ce7';
   });
   
   // Enterキーでもカードを作成できるようにする
